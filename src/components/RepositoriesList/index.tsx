@@ -19,7 +19,7 @@ const RepositoriesList: React.FC = () => {
     return (
         <div className="repositories-container">
             <div className="repositories-title-container">
-                <a href="https://vikram-singh-portfolio.netlify.app/" target="blank"><img src={logo} className="logo" /></a>
+                <a href="https://vikram-singh-portfolio.netlify.app/" target="blank"><img src={logo} className="logo" alt="logo"/></a>
                 <h1 className="repositories-title">Search For NPM Packages</h1>
             </div>
             <form className="repositories-form" onSubmit={onSubmit}>
