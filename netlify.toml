@@ -1,0 +1,20 @@
+# Redirects
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers
+[[headers]]
+  # Define headers for all paths
+  for = "/*"
+    [headers.values]
+    # Cache static assets for 1 year
+    Cache-Control = "public, max-age=31536000"
+
+# Build settings
+[build]
+  # Define the command to build your app
+  command = "npm run build"
+  # The directory where the built app lives
+  publish = "build/"
